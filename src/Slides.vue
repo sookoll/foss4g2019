@@ -30,14 +30,16 @@
     slide.local-theme.icebreaker(enter='fadeIn' leave='fadeOut')
     slide.local-theme.parliament(enter='fadeIn' leave='fadeOut')
     slide.local-theme.pubrace(enter='fadeIn' leave='fadeOut')
-    slide(:steps=4 enter='bounceInRight' leave='bounceOutLeft')
+    slide(:steps=5 enter='bounceInRight' leave='bounceOutLeft')
       h3 Hot topics
       div(v-if='step > 1' enter='fadeIn' leave='fadeOut')
-        p 3D rendering in desktop, web, mobile
+        p (3D) Vector tiles
       div(v-if='step > 2' enter='fadeIn' leave='fadeOut')
         p WebGL and rendering multi-GB imagery in a browser
       div(v-if='step > 3' enter='fadeIn' leave='fadeOut')
         p (GPU) (real-time) processing big-data, pointclouds and satellite (Sentinel) imagery
+      div(v-if='step > 4' enter='fadeIn' leave='fadeOut')
+        p 3D rendering in desktop, web, mobile
     slide.local-theme.weirdstuff(enter='fadeIn' leave='fadeOut')
     slide(enter='bounceInRight' leave='bounceOutLeft')
       h3 Workshops
