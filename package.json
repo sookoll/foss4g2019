@@ -12,7 +12,7 @@
     "dev": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "npm run build && chmod +x ./scripts/deploy.sh && ./scripts/deploy.sh"
+    "deploy": "NODE_ENV=production npm run build && chmod +x ./scripts/deploy.sh && ./scripts/deploy.sh"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
