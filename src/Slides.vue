@@ -25,12 +25,12 @@
       p  9 keynote talks
       p  B2B and BoF meetings, code sprints
       p  1020+ participants around the world (12 from Estonia)
-      p(v-if='step > 1') All-inclusive Ice breaker party and Gala dinner :)
-      p(v-if='step > 2') Pub-race every night :D
+      p.strong(v-if='step > 1') All-inclusive Ice breaker party and Gala dinner :)
+      p.strong(v-if='step > 2') Pub-race every night :D
     slide.local-theme.icebreaker(enter='fadeIn' leave='fadeOut')
     slide.local-theme.parliament(enter='fadeIn' leave='fadeOut')
     slide.local-theme.pubrace(enter='fadeIn' leave='fadeOut')
-    slide(:steps=5 enter='bounceInRight' leave='bounceOutLeft')
+    slide(:steps=4 enter='bounceInRight' leave='bounceOutLeft')
       h3 Hot topics
       div(v-if='step > 1' enter='fadeIn' leave='fadeOut')
         p (3D) Vector tiles
@@ -38,9 +38,7 @@
         p WebGL and rendering multi-GB imagery in a browser
       div(v-if='step > 3' enter='fadeIn' leave='fadeOut')
         p (GPU) (real-time) processing big-data, pointclouds and satellite (Sentinel) imagery
-      div(v-if='step > 4' enter='fadeIn' leave='fadeOut')
-        p 3D rendering in desktop, web, mobile
-    slide.local-theme.weirdstuff(enter='fadeIn' leave='fadeOut')
+    slide.local-theme.talk3(enter='fadeIn' leave='fadeOut')
     slide(enter='bounceInRight' leave='bounceOutLeft')
       h3 Workshops
       h4 Robosat.pink
@@ -72,6 +70,13 @@
       p(v-if='step > 4')  Usecases
       p(v-if='step > 5') 11 parallel sessions, so got covered less than 10%
     slide.local-theme.talk(enter='fadeIn' leave='fadeOut')
+    slide.local-theme.talk2(enter='fadeIn' leave='fadeOut')
+    slide(enter='bounceInRight' leave='bounceOutLeft')
+      h3 New innovative ideas
+      p Using Cloud Optimised GeoTiffs to Query 24 Billion Pixels In Real-Time
+      p geotiff.js
+      p GPU-based neurals network processing
+    slide.local-theme.weirdstuff(enter='fadeIn' leave='fadeOut')
     slide(enter='bounceInRight' leave='bounceOutLeft')
       h3 GeoStuff
       p
@@ -103,6 +108,9 @@ export default {
 .pad {
   padding: 0.5rem
 }
+.strong {
+  font-weight: bold!important
+}
 .codeblock .code-box {
   box-shadow: none;
   border: 1px solid #ddd
@@ -122,28 +130,34 @@ export default {
     }
   }
   &.foss4g {
-    background-image: url(https://i.imgur.com/X5TZUPR.jpg);
+    background-image: url(https://i.imgur.com/X5TZUPR.jpg)
   }
   &.icebreaker {
-    background-image: url(https://i.imgur.com/7785unD.jpg);
+    background-image: url(https://i.imgur.com/7785unD.jpg)
   }
   &.parliament {
-    background-image: url(https://i.imgur.com/uNlPztT.jpg);
+    background-image: url(https://i.imgur.com/uNlPztT.jpg)
   }
   &.pubrace {
-    background-image: url(https://i.imgur.com/IVJYQNB.jpg);
+    background-image: url(https://i.imgur.com/IVJYQNB.jpg)
   }
   &.weirdstuff {
-    background-image: url(https://i.imgur.com/W3mxDrO.jpg);
+    background-image: url(https://i.imgur.com/W3mxDrO.jpg)
   }
   &.workshop {
-    background-image: url(https://i.imgur.com/oZN6kUp.jpg);
+    background-image: url(https://i.imgur.com/oZN6kUp.jpg)
   }
   &.talk {
-    background-image: url(https://i.imgur.com/wGIhbYw.jpg);
+    background-image: url(https://i.imgur.com/wGIhbYw.jpg)
+  }
+  &.talk2 {
+    background-image: url(https://i.imgur.com/AkXrfld.png)
   }
   &.cat {
-    background-image: url(https://i.imgur.com/GfHljbv.jpg);
+    background-image: url(https://i.imgur.com/GfHljbv.jpg)
+  }
+  &.talk3 {
+    background-image: url(https://i.imgur.com/2wwRmvm.png)
   }
 }
 
