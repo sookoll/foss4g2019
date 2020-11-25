@@ -18,7 +18,7 @@
     "animate.css": "^3.7.2",
     "chart.js": "2.5.0",
     "eagle.js": "^0.4.4",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "vue": "^2.6.10",
     "vue-router": "^2.2.0"
   },
